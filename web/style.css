@@ -1,0 +1,619 @@
+    /*--------*/
+    /* Fuente */
+    /*--------*/
+
+    *{
+        font-family: 'Arial';
+    }
+
+    @font-face {
+        font-family: 'Bevan';
+        src: url("./fonts/BevanRegular.ttf") format("opentype");
+        
+    }
+
+    .sieteymedio p, .menuLinks #menuItems a, .tituloPagina p{
+        font-family: "Bevan";
+    }
+
+   
+    /*--------------------*/
+    /* Ajustes generales  */
+    /*--------------------*/
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+        background-size: 100%;
+        font-size: 15px;
+        
+    }
+    
+    :root{
+        --color_cabecera: rgba(0, 162, 255, 0);
+    }
+
+
+
+    /*-----------------------------------------*/
+    /* Cabecera prinicpal titulo Siete y Medio */
+    /*-----------------------------------------*/
+
+    .cabecera {
+        color: white;
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(to top, #00b7d6, #84bfca);
+    }
+
+    .sieteymedio{
+        font-size: 26px;
+        font-weight: bold;
+        display: flex;
+        margin-left: 30px;
+        justify-content: center;
+    }
+
+    
+    
+    /*-------------------------------*/
+    /* Barra navegacion logo / links */
+    /*-------------------------------*/
+
+    .barraNavegacion {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        background-color: #d9f1e9;
+        
+        /* Nav bar */
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    
+    .barraNavegacion .logo{
+        margin-left: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+    .barraNavegacion .logo img{
+        width:80px;
+        height:80px;
+    }
+
+    
+    #menuItems {
+        margin-right: 40px;
+        font-size: 15px;
+        font-weight: bold;
+        
+    }
+    
+    .menuLinks {
+        text-align: right;
+        justify-content: right;
+        display: flex;
+    }
+    
+    .menuLinks ul {
+        display: inline-block;
+        list-style-type: none;
+    }
+    
+    .menuLinks ul li {    
+        display: inline-block;
+        margin-right: 10px;
+        
+    }
+    
+    .menuLinks ul li a{
+        text-decoration:none;
+        color: black;
+        border-radius: 40px;
+        margin: 0 5px;
+        padding: 5px 5px;
+        
+    }
+
+    .menuLinks ul li a.subrayado, a:hover{
+        transition:.4s;
+        background-color: rgba(0,0,0,.3);
+    }
+
+
+
+    /*---------*/
+    /* COMUNES */
+    /*---------*/
+
+
+   
+
+    .tituloPagina {
+        display: flex;
+        justify-content: center; 
+        font-size: 30px;
+    }
+
+
+    .cuadro{
+        width: 60%;
+        padding: 20px;
+        margin: 30px;
+        background-color: rgba(0, 0, 0, 0.15);
+        align-items: center;
+        justify-content: center;
+        text-align:justify;
+        border-radius: 35px 0px 35px 35px;
+        -moz-border-radius: 35px 0px 35px 35px;
+        -webkit-border-radius: 35px 0px 35px 0px;
+        border: 2px solid #5878ca;
+        line-height: 22px;
+    }
+
+    .bold{
+        font-weight: bold;
+    }
+
+    /*-------*/
+    /* INDEX */
+    /*-------*/
+
+    .principalIndex{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .principalIndex .cuadro .ulIndex {
+        margin-top: -55px;
+        
+    }
+
+    /* IMG RELGA DERECHA*/ 
+    .principalIndex .cuadro .divregla{
+        justify-content: right;
+        margin: 0px auto;
+        text-align: right;
+    }
+    .principalIndex .cuadro .divregla img{
+        height: 100px;
+        width: 150px;
+        
+        
+    }
+    .principalIndex .cuadro .divregla img:hover{
+        
+        -webkit-transform: rotate(-100deg);
+    }
+
+
+    /* IMAGEN COPA */ 
+
+    .principalIndex .cuadro .divcopa{
+        justify-content: left;
+        text-align: left;
+    }
+    .principalIndex .cuadro .divcopa img{
+        height: 160px;
+        width: 110px;
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+
+
+    /*------------*/
+    /* TUTORIAL   */
+    /*------------*/
+
+    .principalTutorial{
+        display: flex;
+        flex-direction: column;
+        /* margin-top: -15px; */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titulo{
+        justify-content: center;
+        display: flex;
+        text-decoration: underline;
+        margin: 10px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .tutorial{
+        display: flex;
+        flex-direction: row;
+        margin: 15px;
+        
+    }
+
+    .fotosBaraja{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #barajaesp {
+        width: 240px;
+        height: 190px;
+        margin-left: 35px;
+    }
+
+    #barajapoker{
+        width: 200px;
+        height: 190px;
+        margin-right: 35px;
+    }
+
+    
+
+    /*-------*/
+    /* EQUIP */
+    /*-------*/
+
+    .principalEquipo{
+        display: flex;
+        flex-direction: column;
+        margin-top: -30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fotosEquipo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #engranajes{
+        width: 150px;
+        height: 150px;
+        text-align: left;
+        align-items: left;
+        margin-left: 35px;    
+    }
+
+    #equipo{
+        width: 150px;
+        height: 150px;
+        margin-right: 35px;
+    }
+
+    /*--------------*/
+    /* DOCUMENTACION */
+    /*--------------*/
+
+
+    .principalDocumentacion{
+        display: flex;
+        flex-direction: column;
+        margin-top: -30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /*--------*/
+    /* Footer */
+    /*--------*/
+
+    .footer {
+        background: #000;
+        color: #8a8a8a;
+        font-size: 15px;
+        padding: 50px 0 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .footer2 {
+        background: #000;
+        color: #8a8a8a;
+        padding: 10px 0 20px;
+    }
+    
+    .logoFooter, .appFooter, .infoFooter, .redesFooter {
+    margin:25px}
+    
+    .app-logo {
+        margin-top: 20px;
+    }
+    
+    .app-logo img {
+        width: 140px;
+    }
+    
+    .footer hr {
+        background: #b5b5b5;
+        height: 1px;
+        margin: 20px 0;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .copyright {
+        text-align: center;
+    }
+    
+    .logoImgF{
+        width: 120px;
+    }
+    
+    .logoFooter img{
+        display: flex;
+        align-items: center;
+        margin: 0px auto;
+        text-align: center;
+    }
+
+
+
+
+    /*----------------*/
+    /* VISTA EN MOVIL */
+    /*----------------*/
+    
+
+    
+
+
+    @media only screen and (max-width: 768px) {
+
+        /* Ajustes de la barra de navegación. */
+
+        .barraNavegacion{
+            display:flex;
+           
+        }
+
+        .sieteymedio{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+        .barraNavegacion .logo {
+            margin-left: 10px;
+        }
+        .barraNavegacion .logo img{
+            width:60px;
+            height:60px;
+        };
+                
+        #MenuItems{
+            margin-right: 15px auto;
+            display: flex;
+            /* margin-left:15px; */
+            align-items: right;
+            justify-content: right;
+            text-align: right;
+        }    
+
+        /* !!!!!!!!mirar menu barra navegacion en el movil */
+
+        .menuLinks li{
+            display: flex;
+            padding-bottom: 5px;
+            margin: 0px auto;
+            
+        }
+            
+        .menuLinks {
+            display: flex;
+            align-items: right;
+            justify-content: right;
+            text-align: right;
+        }
+
+
+
+        .tituloPagina{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            align-items: center;
+            font-size: 22px;
+        }
+        
+        .cuadro{
+            line-height: 19px;
+        }
+
+
+        /*********/
+        /* INDEX */
+        /*********/
+
+        .principalIndex {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            justify-items: center;
+        }
+        
+        /* REGLA */
+
+        .principalIndex .cuadro .divregla{
+            justify-content: center;
+            margin: 0px auto;
+            text-align: center;
+        }
+        .principalIndex .cuadro .divregla img{
+            height: 50px;
+            width: 90px;
+        }
+
+        /* COPA */
+
+        .principalIndex .cuadro .divcopa{
+            justify-content: center;
+            margin: 0px auto;
+            text-align: center;     
+        }
+        .principalIndex .cuadro .divcopa img{
+            height: 50px;
+            width: 50px;
+        }
+
+
+        .principalIndex .cuadro .ulIndex {
+            margin-top: 10px;
+        }
+
+
+        /************/
+        /* TUTORIAL */
+        /************/
+
+        .principalTutorial{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            align-items: center;
+            
+        }
+
+        
+
+        .principalTutorial p.titulo{
+            display: flex;
+            font-size: 14px;
+        }
+
+        .principalTutorial p, li, ul, .principalEquipo p{
+            font-size: 11px;
+        }
+
+        
+        .fotosBaraja{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #barajaesp {
+            width: 150px;
+            height: 140px;
+            margin-right: 35px;
+            margin-bottom: 10px;
+        }
+
+        #barajapoker{
+            width: 110px;
+            height: 130px;
+            margin-left: 35px;
+            margin-bottom: 10px;
+        }
+
+        
+        /**********/
+        /* EQUIPO */
+        /**********/
+
+        .fotosEquipo{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #engranajes{
+            width: 130px;
+            height: 120px;
+            margin-right: 25px;
+            margin-bottom: 10px;
+        }
+
+        #equipo{
+            width: 120px;
+            height: 120px;
+            margin-left: 25px;
+            margin-bottom: 10px;
+        }
+        
+
+        /*****************/
+        /* DOCUMENTACION */
+        /*****************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* FOOTER */
+
+        .footer {
+            background: #000;
+            color: #8a8a8a;
+            font-size: 15px;
+            padding: 60px 0 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer .logoFooter img{
+            display:flex;
+            justify-content: center;
+            margin: 0px auto;
+            height: 80px;
+            width: 80px;
+        }
+
+
+        .footer .appFooter h3{
+            display: flex;
+            margin: 0px auto;
+            justify-content: center;
+        }
+
+        .footer .appFooter p{
+            display: flex;
+            margin: 0px auto;
+            justify-content: center;
+            padding-top: 5px;
+        }
+        
+        .footer .infoFooter h3{
+            display: flex;
+            justify-content: center;
+            margin: 0px auto;
+        } 
+
+        .footer .redesFooter h3{
+            display: flex;
+            justify-content: center;
+            margin: 0px auto;
+        } 
+}    
