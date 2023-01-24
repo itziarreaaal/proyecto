@@ -47,12 +47,7 @@
     /* Cabecera prinicpal titulo Siete y Medio */
     /*-----------------------------------------*/
 
-    .cabecera {
-        color: white;
-        display: flex;
-        justify-content: center;
-        background: linear-gradient(to top, #00b7d6, #84bfca);
-    }
+    
 
     .sieteymedio{
         font-size: 26px;
