@@ -49,6 +49,14 @@
 
     
 
+    
+
+    
+    
+    /*-------------------------------*/
+    /* Barra navegacion logo / links */
+    /*-------------------------------*/
+
     .sieteymedio{
         font-size: 26px;
         font-weight: bold;
@@ -56,12 +64,6 @@
         margin-left: 30px;
         justify-content: center;
     }
-
-    
-    
-    /*-------------------------------*/
-    /* Barra navegacion logo / links */
-    /*-------------------------------*/
 
     .barraNavegacion {
         display: flex;
