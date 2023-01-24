@@ -144,7 +144,9 @@
         display: flex;
         justify-content: center; 
         font-size: 30px;
+
     }
+
 
 
     .cuadro{
@@ -160,7 +162,79 @@
         -webkit-border-radius: 35px 0px 35px 0px;
         border: 2px solid #5878ca;
         line-height: 22px;
+    
     }
+
+    .tituloPagina:hover {
+        animation: myAnim 1s ease 0s 1 normal forwards;
+    }
+      
+   
+    
+
+    @keyframes myAnim {
+        0% {
+            transform: translate(0);
+        }
+    
+        10% {
+            transform: translate(-2px, -2px);
+        }
+    
+        20% {
+            transform: translate(2px, -2px);
+        }
+    
+        30% {
+            transform: translate(-2px, 2px);
+        }
+    
+        40% {
+            transform: translate(2px, 2px);
+        }
+    
+        50% {
+            transform: translate(-2px, -2px);
+        }
+    
+        60% {
+            transform: translate(2px, -2px);
+        }
+    
+        70% {
+            transform: translate(-2px, 2px);
+        }
+    
+        80% {
+            transform: translate(-2px, -2px);
+        }
+    
+        90% {
+            transform: translate(2px, -2px);
+        }
+    
+        100% {
+            transform: translate(0);
+        }
+    }
+
+
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
 
     .bold{
         font-weight: bold;
@@ -309,6 +383,34 @@
         justify-content: center;
     }
 
+    .principalDocumentacion .cuadro p{
+        text-align: center;
+    }
+
+    .fotosDocumentacion{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 25px;
+
+    }
+
+    #documentacion{
+        width: 250px;
+        height: 160px;
+        text-align: left;
+        align-items: left;
+        margin-left: 35px;    
+    }
+
+    #python{
+        width: 250px;
+        height: 160px;
+        margin-right: 35px;
+    }
+
+    
+
 
     /*--------*/
     /* Footer */
@@ -407,7 +509,7 @@
             text-align: right;
         }    
 
-        /* !!!!!!!!mirar menu barra navegacion en el movil */
+       
 
         .menuLinks li{
             display: flex;
@@ -435,6 +537,10 @@
         
         .cuadro{
             line-height: 19px;
+        }
+
+        .principalTutorial p, li, ul, .principalEquipo p, .principalDocumentacion p{
+            font-size: 11px;
         }
 
 
@@ -481,6 +587,8 @@
             margin-top: 10px;
         }
 
+        
+
 
         /************/
         /* TUTORIAL */
@@ -501,9 +609,7 @@
             font-size: 14px;
         }
 
-        .principalTutorial p, li, ul, .principalEquipo p{
-            font-size: 11px;
-        }
+        
 
         
         .fotosBaraja{
@@ -559,7 +665,31 @@
         /*****************/
 
 
+        .fotosDocumentacion{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            
+        }
 
+        #documentacion{
+            width: 190px;
+            height: 120px;
+            margin-right: 25px;
+            margin-bottom: 10px;
+        }
+
+        #python{
+            width: 190px;
+            height: 120px;
+            margin-left: 25px;
+            margin-bottom: 10px;
+        }
+        .principalDocumentacion .cuadro p.titulo{
+            display: flex;
+            font-size: 14px;
+        }
 
 
 
